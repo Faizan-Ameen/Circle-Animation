@@ -1,0 +1,57 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #3498db;
+}
+
+.container {
+      width: 450px;
+      padding: 50px 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #ffff;
+      border-radius: 8px;
+      flex-direction: column;
+      gap: 30px;
+      transition: all ease-in-out 1s;
+
+}
+
+.circular-progress {
+      position: relative;
+      border-radius: 50%;
+      width: 250px;
+      height: 250px;
+      background: conic-gradient(#3498db 3.6deg, #fff 0deg);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: all ease-in-out 1s;
+}
+
+.circle-value {
+      z-index: 2;
+      font-size: 30px;
+      color: #3498db;
+      transition: all ease-in-out 1s;
+
+}
+
+.circular-progress::before {
+      content: "";
+      width: 210px;
+      height: 210px;
+      background-color: #ffffff;
+      position: absolute;
+      border-radius: 50%;
+}
